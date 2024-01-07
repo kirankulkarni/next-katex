@@ -8,6 +8,9 @@ export default function Home() {
           Text rendering without using Katex
         </Link>
       </li>
+      <li className='text-xl text-blue-500 underline underline-offset-2'>
+        <Link href='/with-katex'>Text rendering with Katex</Link>
+      </li>
     </ul>
   );
 }
