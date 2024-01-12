@@ -1,5 +1,5 @@
 'use client';
-import { renderMathInElement } from 'katex/dist/contrib/auto-render';
+import renderMathInElement from 'katex/dist/contrib/auto-render';
 import 'katex/dist/katex.min.css';
 import { useEffect, useRef } from 'react';
 
@@ -15,7 +15,6 @@ export default function KatexSpan({ text, ...delegated }) {
       });
     }
   }, [text]);
-  console.log(text);
 
   return (
     <div ref={katexTextRef} {...delegated}>
